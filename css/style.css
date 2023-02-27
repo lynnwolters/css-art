@@ -1,5 +1,46 @@
+/*********/
+/* RESET */
+/*********/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+li, a {
+    cursor: pointer;
+}
+
+/*********/
+/* FONTS */
+/*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Cartoonist';
+    src: url(../fonts/cartoonist.woff);
+}
+
+/***********/
+/* KLEUREN */
+/***********/
+
+:root {
+    --accent-color-1: #FFAFD5;
+    --line-color-1: #C680A1;
+
+    --accent-color-2: #E1512C;
+    --line-color-2: #C0320E;
+
+    --accent-color-3: #7D281F;
+    --line-color-3: #5E1D16;
+
+    --accent-color-4: #F9DCBB;
+    --line-color-4: #B68C5D;
+
+    --text-color-1: #FFF;
+    
+    --border-color: #000;
 }

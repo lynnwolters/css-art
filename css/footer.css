@@ -1,0 +1,17 @@
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    height: 6em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Red Hat Display', sans-serif;
+}

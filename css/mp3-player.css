@@ -1,0 +1,138 @@
+/**********/
+/* LAYOUT */
+/**********/
+
+body {
+    background-color: var(--accent-color-1);
+}
+
+body nav ul {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body nav ul li {
+    width: 4em;
+    aspect-ratio: 1/1;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .4em;
+    transition: 0.4s;
+}
+
+body nav ul li:hover {
+    transform: scale(1.1);
+}
+
+body nav ul li:nth-of-type(1) {
+    background-color: var(--accent-color-4);
+}
+
+body nav ul li:nth-of-type(2) {
+    background-color: var(--accent-color-3);
+}
+
+body nav ul li:nth-of-type(3) {
+    background-color: var(--accent-color-2);
+}
+
+body nav ul li:nth-of-type(4) {
+    background-color: var(--accent-color-1);
+    border: solid .2em var(--line-color-1);
+}
+
+body nav ul li a {
+    font-family: 'Cartoonist';
+    color: var(--text-color-1);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/**************/
+/* MP3 PLAYER */
+/**************/
+
+.container-mp3-player {
+    --hight-been: 1.4em;
+    --hight-lichaam: 8em;
+
+    width: 30em;
+    height: calc(var(--hight-lichaam) + var(--hight-been));
+    position: absolute;
+    left: calc(50% - 15em);
+    bottom: calc(50% - 4em);
+
+    background-color: #f006;
+}
+
+.lichaam {
+    background-color: var(--accent-color-2);
+    border: solid .1em var(--border-color);
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: var(--hight-lichaam);
+}
+
+.binnen-lichaam-1 {
+    width: 18em;
+    height: 5em;
+    background-color: var(--accent-color-4);
+    border: solid .1em var(--border-color);
+    border-radius: .8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.binnen-lichaam-2 {
+    width: 11em;
+    height: 3em;
+    background-color: var(--accent-color-3);
+    border: solid .1em var(--border-color);
+    border-radius: .5em;
+}
+
+.been {
+    width: 19em;
+    height: var(--hight-been);
+    background-color: var(--accent-color-3);
+    border: solid .1em var(--border-color);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.been.links {
+    right: 50%;
+}
+
+.been.rechts {
+    left: 50%;
+}
+
+.sok {
+    width: 1em;
+    height: 2em;
+    background-color: var(--accent-color-4);
+    border: solid .1em var(--border-color);
+    border-radius: .2em;
+    position: absolute;
+}
+
+.sok.links {
+    left: 0;
+}
+
+.sok.rechts {
+    right: 0;
+}
+
