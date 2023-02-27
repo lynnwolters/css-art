@@ -234,7 +234,7 @@ conic-gradient(
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: -2;
 }
 
 .zij-knop {
@@ -256,5 +256,20 @@ conic-gradient(
     border-radius: 1em 1em 0 0;;
     border: solid var(--width-border) var(--border-color);
     position: absolute;
+}
+
+svg {
+    position: absolute;
+    z-index: -1;
+}
+
+path {
+    fill: transparent;
+}
+
+text {
+    fill: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 4em;
 }
 
