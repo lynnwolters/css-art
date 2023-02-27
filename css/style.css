@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-li, a {
+li, a, button {
     cursor: pointer;
 }
 
@@ -28,19 +28,20 @@ li, a {
 /***********/
 
 :root {
-    --accent-color-1: #FFAFD5;
-    --line-color-1: #C680A1;
+    --accent-color-1: rgb(255 175 213);
+    --line-color-1: rgb(198 128 161);
+    --shadow-color-1: rgb(241 156 196);
 
-    --accent-color-2: #E1512C;
-    --line-color-2: #C0320E;
+    --accent-color-2: rgb(255 81 44);
+    --line-color-2: rgb(192 50 14);
 
-    --accent-color-3: #7D281F;
-    --line-color-3: #5E1D16;
+    --accent-color-3: rgb(125 40 31);
+    --line-color-3: rgb(94 29 22);
 
-    --accent-color-4: #F9DCBB;
-    --line-color-4: #B68C5D;
+    --accent-color-4: rgb(255 220 187);
+    --line-color-4: rgb(182 140 93);
 
-    --text-color-1: #FFF;
-    
-    --border-color: #000;
+    --text-color-1: rgb(255,255,255);
+
+    --border-color: rgb(0,0,0);
 }
