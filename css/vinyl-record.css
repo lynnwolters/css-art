@@ -86,12 +86,9 @@ body nav ul li a {
 .lichaam {
     background-color: var(--accent-color-1);
     border: solid var(--width-border) var(--border-color);
-    border-radius: .5em;
+    border-radius: 100em;
     width: var(--width-lichaam);
     height: var(--height-lichaam);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .schaduw {
