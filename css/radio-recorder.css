@@ -62,10 +62,10 @@ body nav ul li a {
     --width-border: .1em;
 
     width: var(--width-lichaam);
-    height: calc(var(--height-lichaam) + var(--height-been) - var(--width-border));
+    height: calc(var(--height-lichaam) + var(--height-been));
     position: absolute;
     left: calc(50% - 15em);
-    bottom: calc(50% - 4em);
+    bottom: calc(50% - 6em);
 }
 
 .lichaam {

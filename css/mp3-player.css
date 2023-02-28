@@ -56,17 +56,31 @@ body nav ul li a {
 /* MP3 PLAYER */
 /**************/
 
+.wrapper-mp3-player {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #f006;
+
+    display:grid;
+    justify-items: center;
+}
+
 .container-mp3-player {
     --height-been: 1.4em;
     --height-lichaam: 8em;
     --width-lichaam: 30em;
     --width-border: .1em;
+    
+    position:relative;
 
     width: var(--width-lichaam);
     height: calc(var(--height-lichaam) + var(--height-been) - var(--width-border));
-    position: absolute;
-    left: calc(50% - 15em);
-    bottom: calc(50% - 4em);
+    
+    z-index: 100;
 }
 
 .lichaam {
@@ -232,8 +246,6 @@ conic-gradient(
     border-radius: 50%;
     background-color: var(--shadow-color-1);
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: -2;
 }
 
@@ -260,7 +272,7 @@ conic-gradient(
 
 svg {
     position: absolute;
-    z-index: -1;
+    top:-4em;
 }
 
 path {
