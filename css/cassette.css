@@ -64,7 +64,7 @@ body nav ul li a {
 .wrapper-cassette {
     position: absolute;
     left: 50%;
-    top: calc(50% + 4em);
+    top: calc(50% + 6em);
     transform: translate(-50%, -50%);
     display: grid;
     justify-items: center;
@@ -79,7 +79,7 @@ body nav ul li a {
 
     width: var(--width-lichaam);
     height: calc(var(--height-lichaam) + var(--height-been));
-    
+
     z-index: 100;
 }
 
@@ -89,10 +89,130 @@ body nav ul li a {
     border-radius: .5em;
     width: var(--width-lichaam);
     height: var(--height-lichaam);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.schroeven {
+    height: var(--height-lichaam);
+    width: var(--width-lichaam);
+    position: absolute;
+    z-index: 200;
+}
+
+.schroeven li {
+    width: 1em;
+    aspect-ratio: 1/1;
+    border-radius: 2em;
+    background-color: var(--accent-color-2);
+    border: solid var(--width-border) var(--border-color);
+    list-style: none;
+    position: absolute;
+    margin: .4em;
+}
+
+.schroeven li:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+
+.schroeven li:nth-of-type(2) {
+    right: 0;
+    top: 0;
+}
+
+.schroeven li:nth-of-type(3) {
+    bottom: 0;
+    right: 0;
+}
+
+.schroeven li:nth-of-type(4) {
+    left: 0;
+    bottom: 0;
 }
 
 .buiten-lichaam-1 {
-    background-color: var();
+
+    padding: 1em;
+    margin: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    background-color: var(--accent-color-2);
+
+    border-radius: 0 0 1em 1em;
+
+    box-shadow: inset 0 0 0 .15em var(--border-color);
+
+    background-image:
+        linear-gradient(135deg,
+            var(--border-color) 1.5em,
+            #0000 1.5em),
+        linear-gradient(-135deg,
+            var(--border-color) 1.5em,
+            #0000 1.5em);
+
+    clip-path:
+        polygon(1.75em 0,
+            calc(100% - 1.75em) 0,
+            100% 1.75em,
+            100% 100%,
+            0% 100%,
+            0 1.75em,
+            1.75em 0);
+}
+
+hr {
+    width: 14em;
+    margin: .6em;
+    border: solid .075em var(--border-color);
+}
+
+.binnen-lichaam {
+    width: 20em;
+    height: 6em;
+    background-color: var(--accent-color-4);
+    border-radius: 1em;
+    border: solid var(--width-border) var(--border-color);
+}
+
+.buiten-lichaam-2 {
+    background-color: var(--accent-color-2);
+    height: 25%;
+    margin: .5em 1em;
+    border-radius: .5em .5em 2.5em 2.5em;
+    border: solid var(--width-border) var(--border-color);
+}
+
+.ogen {
+    top: 1em;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: var(--width-lichaam);
+}
+
+.oog {
+width: 3.4em;
+height: 6em;
+border-radius: 50%;
+border: solid var(--width-border) var(--border-color);
+background-color: var(--text-color-1);
+background-image: 
+radial-gradient(
+    transparent 40%, 
+    white 40%
+    ), 
+conic-gradient(
+    from -90deg at 60% 40%, 
+    black 92%, 
+    transparent 92%
+    );
 }
 
 .schaduw {
