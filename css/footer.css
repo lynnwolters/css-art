@@ -14,7 +14,7 @@ footer {
 
 footer button {
     font-family: 'Red Hat Display', sans-serif;
-    background-color: var(--accent-color-1);
+    background: none;
     border: none;
     font-size: 1em;
 }

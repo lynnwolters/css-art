@@ -57,13 +57,13 @@ body nav ul li a {
 /**************/
 
 .container-mp3-player {
-    --hight-been: 1.4em;
-    --hight-lichaam: 8em;
+    --height-been: 1.4em;
+    --height-lichaam: 8em;
     --width-lichaam: 30em;
     --width-border: .1em;
 
     width: var(--width-lichaam);
-    height: calc(var(--hight-lichaam) + var(--hight-been) - var(--width-border));
+    height: calc(var(--height-lichaam) + var(--height-been) - var(--width-border));
     position: absolute;
     left: calc(50% - 15em);
     bottom: calc(50% - 4em);
@@ -78,7 +78,7 @@ body nav ul li a {
     align-items: center;
     position: relative;
     width: var(--width-lichaam);
-    height: var(--hight-lichaam);
+    height: var(--height-lichaam);
 }
 
 .binnen-lichaam-1 {
@@ -102,7 +102,7 @@ body nav ul li a {
 
 .been {
     width: 19em;
-    height: var(--hight-been);
+    height: var(--height-been);
     background-color: var(--accent-color-3);
     border: solid var(--width-border) var(--border-color);
     position: absolute;
