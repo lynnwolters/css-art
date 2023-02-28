@@ -59,12 +59,8 @@ body nav ul li a {
 .wrapper-mp3-player {
     position: absolute;
     left: 50%;
-    top: 50%;
-
+    top: calc(50% + 4em);
     transform: translate(-50%, -50%);
-
-    background-color: #f006;
-
     display:grid;
     justify-items: center;
 }
@@ -270,18 +266,10 @@ conic-gradient(
     position: absolute;
 }
 
-svg {
-    position: absolute;
-    top:-4em;
-}
-
-path {
-    fill: transparent;
-}
-
-text {
-    fill: var(--text-color-1);
+#eerste-titel {
+    color: var(--text-color-1);
     font-family: 'Cartoonist';
-    font-size: 4em;
+    font-size: 6em;
+    position: absolute;
+    top: -1.8em;
 }
-

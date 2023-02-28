@@ -56,6 +56,15 @@ body nav ul li a {
 /* RADIO RECORDER */
 /******************/
 
+.wrapper-radio-recorder {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 4em);
+    transform: translate(-50%, -50%);
+    display:grid;
+    justify-items: center;
+}
+
 .container-radio-recorder {
     --height-lichaam: 12em;
     --width-lichaam: 30em;
@@ -201,7 +210,13 @@ conic-gradient(
     border-radius: 50%;
     background-color: var(--shadow-color-2);
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: -2;
+}
+
+#tweede-titel {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 6em;
+    position: absolute;
+    top: -1.8em;
 }
