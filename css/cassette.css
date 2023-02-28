@@ -50,22 +50,37 @@ body nav ul li a {
     color: var(--text-color-1);
     text-decoration: none;
     font-size: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /***********/
 /* CASSETTE */
 /***********/
 
+.wrapper-cassette {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 4em);
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-items: center;
+}
+
 .container-cassette {
     --height-lichaam: 16em;
     --width-lichaam: 28em;
     --width-border: .1em;
 
+    position: relative;
+
     width: var(--width-lichaam);
     height: calc(var(--height-lichaam) + var(--height-been));
-    position: absolute;
-    left: calc(50% - 14em);
-    bottom: calc(50% - 8em);
+    
+    z-index: 100;
 }
 
 .lichaam {
@@ -78,4 +93,21 @@ body nav ul li a {
 
 .buiten-lichaam-1 {
     background-color: var();
+}
+
+.schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-3);
+    position: absolute;
+    z-index: -2;
+}
+
+#derde-titel {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 6em;
+    position: absolute;
+    top: -1.8em;
 }
