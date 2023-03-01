@@ -64,7 +64,7 @@ body nav ul li a {
 .wrapper-vinyl-record {
     position: absolute;
     left: 50%;
-    top: calc(50% + 6em);
+    top: calc(50% + 3em);
     transform: translate(-50%, -50%);
     display: grid;
     justify-items: center;
@@ -89,6 +89,132 @@ body nav ul li a {
     border-radius: 100em;
     width: var(--width-lichaam);
     height: var(--height-lichaam);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+    repeating-radial-gradient(
+		black,
+		black 1%,
+		var(--accent-color-1) 1%,
+		var(--accent-color-1) 12%
+	);
+}
+
+.ogen {
+    top: -3em;
+    z-index: 150;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: var(--width-lichaam);
+}
+
+.oog {
+width: 3.4em;
+height: 6em;
+border-radius: 50%;
+border: solid var(--width-border) var(--border-color);
+background-color: var(--text-color-1);
+background-image: 
+radial-gradient(
+    transparent 40%, 
+    white 40%
+    ), 
+conic-gradient(
+    from -90deg at 60% 40%, 
+    black 92%, 
+    transparent 92%
+    );
+}
+
+.binnen-cirkel {
+    background-color: var(--accent-color-3);
+    border: solid var(--width-border) var(--border-color);
+    width: 3.2em;
+    border-radius: 2em;
+    aspect-ratio: 1/1;
+    z-index: 100;
+}
+
+.been {
+    background-color: var(--accent-color-2);
+    height: 6em;
+    width: 1.6em;
+    position: absolute;
+    border: solid var(--width-border) var(--border-color);
+    display: flex;
+    top: calc(95% - var(--width-border));
+    z-index: -1;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.been.links {
+    left: calc(55% - var(--width-border));
+}
+
+.been.rechts {
+    right: calc(55% - var(--width-border));
+}
+
+.sok {
+    width: 2em;
+    height: 1em;
+    background-color: var(--accent-color-1);
+    border: solid var(--width-border) var(--border-color);
+    border-radius: .2em;
+    position: absolute;
+}
+
+.schoen {
+    background-color: var(--accent-color-3);
+    width: 5em;
+    height: 1.4em;
+    position: absolute;
+    border-radius: .2em;
+    border: solid var(--width-border) var(--border-color);
+    bottom: -1.4em;
+    display: flex;
+    justify-content: center;
+}
+
+.schoen.links {
+    left: 0;
+}
+
+.schoen.rechts {
+    right: 0;
+}
+
+.box {
+    width: 2em;
+    height: 1em;
+    background-color: var(--accent-color-3);
+    position: absolute;
+    border-top: solid var(--width-border) var(--border-color);
+    border-right: solid var(--width-border) var(--border-color);
+    border-left: solid var(--width-border) var(--border-color);
+    border-radius: 1em 1em 0 0;
+    top: -1em;
+}
+
+.box.links {
+    right: -0.05em;
+}
+
+.box.rechts {
+    left: -0.05em;
+}
+
+.zool {
+    width: 4.6em;
+    height: .6em;
+    background-color: var(--accent-color-1);
+    border: solid var(--width-border) var(--border-color);
+    border-radius: .2em;
+    position: absolute;
+    bottom: -.6em;
 }
 
 .schaduw {
@@ -98,6 +224,7 @@ body nav ul li a {
     background-color: var(--shadow-color-4);
     position: absolute;
     z-index: -2;
+    top: 25%;
 }
 
 #vierde-titel {
@@ -105,5 +232,5 @@ body nav ul li a {
     font-family: 'Cartoonist';
     font-size: 6em;
     position: absolute;
-    top: -1.8em;
+    top: -1.2em;
 }
