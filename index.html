@@ -8,12 +8,13 @@
 
     <title>MP3 Player</title>
 
+    <script defer src="./js/animate.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/mp3-player.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
 
 </head>
-<body>
+<body onload="animateElement()">
 
     <nav>
         <ul>
@@ -24,7 +25,7 @@
         </ul>
     </nav>
 
-    <div class="wrapper-mp3-player">
+    <div class="wrapper-mp3-player my-element">
 
         <div class="container-mp3-player">
 
@@ -71,6 +72,7 @@
         <div class="schaduw"></div>
 
     </div>
+</div>
 
     <footer>
         <button>🎵 Click me!</button>
