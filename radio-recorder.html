@@ -9,25 +9,25 @@
 
     <title>Radio Recorder</title>
 
-    <script defer src="./js/animate.js"></script>
+    <script defer src="./js/page-transition.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/radio-recorder.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
 
 </head>
 
-<body onload="animateElement()">
+<body class="pagina-2">
 
     <nav>
         <ul>
-            <li><a href="vinyl-record.html">70s</a></li>
-            <li><a href="cassette.html">80s</a></li>
-            <li><a href="radio-recorder.html">90s</a></li>
-            <li><a href="index.html">00s</a></li>
+            <li><a href="/vinyl-record.html" onclick="changePage()">70s</a></li>
+            <li><a href="/cassette.html" onclick="changePage()">80s</a></li>
+            <li><a href="/radio-recorder.html">90s</a></li>
+            <li><a href="/index.html" onclick="changePage()">00s</a></li>
         </ul>
     </nav>
 
-    <div class="wrapper-radio-recorder my-element">
+    <div class="wrapper-radio-recorder">
 
         <div class="container-radio-recorder">
 
