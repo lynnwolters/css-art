@@ -2,8 +2,13 @@
 /* LAYOUT */
 /**********/
 
-.pagina-1 {
+body {
     background-color: var(--accent-color-1);
+
+    display:grid;
+    place-items: center;
+
+    height:100dvh;
 }
 
 body nav ul {
@@ -277,4 +282,45 @@ conic-gradient(
     font-size: 6em;
     position: absolute;
     top: -1.8em;
+}
+
+
+
+
+/* MUZIEK */
+
+.muzieknoot-container {
+    position:absolute;
+
+    display:grid;
+    place-content: center;
+    place-items: center;
+
+    list-style: none;
+
+    z-index: 1000;
+}
+
+.muzieknoot {
+    position:absolute;
+    width: 5em;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    /* animation: move 2s ease-in-out; */
+
+    background-image: url(../img/muzieknoot.png);
+    /* background-color: white; */
+
+    
+}
+
+.muzieknoot-container.boom li {
+    transform:
+        translateX( calc( var(--x) * 1vw) ) translateY( calc( var(--y) * 1vh) );
+        opacity:0;
+    transition:
+        transform calc(.3s * var(--t) ),
+        opacity .1s calc(.3s * var(--t) );
 }

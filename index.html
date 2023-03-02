@@ -8,13 +8,42 @@
 
     <title>MP3 Player</title>
 
-    <script defer src="./js/page-transition.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/mp3-player.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
 
 </head>
-<body class="pagina-1">
+<body>
+
+    <!-- <div class="muzieknoot-container">
+        <div id="muzieknoot"></div>
+    </div> -->
+
+    <ul class="muzieknoot-container">
+        <li class="muzieknoot" style="--x:40; --y:-40; --t:.8;"></li>
+        <li class="muzieknoot" style="--x:-30; --y:-40; --t:1"></li>
+        <li class="muzieknoot" style="--x:30; --y:-30; --t:.5"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+        <li class="muzieknoot"></li>
+    </ul>
 
     <nav>
         <ul>
@@ -25,9 +54,9 @@
         </ul>
     </nav>
 
-    <div class="wrapper-mp3-player">
+    <div class="wrapper-mp3-player slide-in">
 
-        <div class="container-mp3-player">
+        <div class="container-mp3-player bounce">
 
             <div class="lichaam">
 
@@ -69,17 +98,18 @@
 
         <div id="eerste-titel">MP3 Player</div>
 
-        <div class="schaduw"></div>
+        <div class="schaduw scale"></div>
 
     </div>
 </div>
 
     <footer>
-        <button>🎵 Click me!</button>
+        <button id="muzieknoot-button">🎵 Click me!</button>
     </footer>
 
     <script src="./js/libraries/circletype.min.js"></script>
     <script src="./js/gebogen-tekst.js"></script>
+    <script src="./js/muzieknoten.js"></script>
     
 </body>
 </html>
