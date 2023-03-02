@@ -17,4 +17,9 @@ footer button {
     background: none;
     border: none;
     font-size: 1em;
+    transition: 1s;
+}
+
+footer button:hover {
+    transform: scale(1.2);
 }

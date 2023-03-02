@@ -15,46 +15,31 @@
 </head>
 <body>
 
-    <!-- <div class="muzieknoot-container">
-        <div id="muzieknoot"></div>
-    </div> -->
-
-    <ul class="muzieknoot-container">
-        <li class="muzieknoot" style="--x:40; --y:-40; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:-30; --y:-40; --t:1"></li>
-        <li class="muzieknoot" style="--x:30; --y:-30; --t:.5"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-        <li class="muzieknoot"></li>
-    </ul>
-
     <nav>
         <ul>
-            <li><a href="/vinyl-record.html" onclick="changePage()">70s</a></li>
-            <li><a href="/cassette.html" onclick="changePage()">80s</a></li>
-            <li><a href="/radio-recorder.html" onclick="changePage()">90s</a></li>
+            <li><a href="/vinyl-record.html">70s</a></li>
+            <li><a href="/cassette.html">80s</a></li>
+            <li><a href="/radio-recorder.html">90s</a></li>
             <li><a href="/index.html">00s</a></li>
         </ul>
     </nav>
 
+
     <div class="wrapper-mp3-player slide-in">
+
+        <ul class="muzieknoot-container">
+            <li class="muzieknoot" style="--x:20; --y:-40; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:30; --y:20; --t:1"></li>
+            <li class="muzieknoot" style="--x:20; --y:-10; --t:.5"></li>
+            <li class="muzieknoot" style="--x:-10; --y:--20; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:-20; --y:-30; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:40; --y:-0; --t:.6;"></li>
+            <li class="muzieknoot" style="--x:-25; --y:-10; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:-40; --y:-40; --t:.4;"></li>
+            <li class="muzieknoot" style="--x:-30; --y:20; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:10; --y:10; --t:.4;"></li>
+            <li class="muzieknoot" style="--x:-10; --y:40; --t:.8;"></li>
+        </ul>
 
         <div class="container-mp3-player bounce">
 
@@ -70,8 +55,12 @@
 
                 <div class="ogen">
                     <div class="oog">
+                        <div class="pupil">
+                        </div>
                     </div>
                     <div class="oog">
+                        <div class="pupil">
+                        </div>
                     </div>
                 </div>
 
@@ -98,10 +87,9 @@
 
         <div id="eerste-titel">MP3 Player</div>
 
-        <div class="schaduw scale"></div>
+        <div class="schaduw scale"></div> 
 
     </div>
-</div>
 
     <footer>
         <button id="muzieknoot-button">🎵 Click me!</button>
@@ -110,6 +98,7 @@
     <script src="./js/libraries/circletype.min.js"></script>
     <script src="./js/gebogen-tekst.js"></script>
     <script src="./js/muzieknoten.js"></script>
+    <script src="./js/ogen.js"></script>
     
 </body>
 </html>

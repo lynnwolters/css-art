@@ -4,11 +4,14 @@
 
 body {
     background-color: var(--accent-color-1);
-
     display:grid;
     place-items: center;
-
     height:100dvh;
+}
+
+body nav {
+    position: fixed;
+    top: 0;
 }
 
 body nav ul {
@@ -229,16 +232,22 @@ body nav ul li a {
 }
 
 .oog {
-width: 3.4em;
-height: 6em;
+    border: solid var(--width-border) var(--border-color);
+    width: 3.4em;
+    height: 6em;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pupil {
+width: 2em;
+height: 4em;
 border-radius: 50%;
-border: solid var(--width-border) var(--border-color);
 background-color: var(--text-color-1);
 background-image: 
-radial-gradient(
-    transparent 40%, 
-    white 40%
-    ), 
 conic-gradient(
     from -90deg at 60% 40%, 
     black 92%, 
@@ -282,45 +291,5 @@ conic-gradient(
     font-size: 6em;
     position: absolute;
     top: -1.8em;
-}
-
-
-
-
-/* MUZIEK */
-
-.muzieknoot-container {
-    position:absolute;
-
-    display:grid;
-    place-content: center;
-    place-items: center;
-
-    list-style: none;
-
-    z-index: 1000;
-}
-
-.muzieknoot {
-    position:absolute;
-    width: 5em;
-    aspect-ratio: 1/1;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    /* animation: move 2s ease-in-out; */
-
-    background-image: url(../img/muzieknoot.png);
-    /* background-color: white; */
-
-    
-}
-
-.muzieknoot-container.boom li {
-    transform:
-        translateX( calc( var(--x) * 1vw) ) translateY( calc( var(--y) * 1vh) );
-        opacity:0;
-    transition:
-        transform calc(.3s * var(--t) ),
-        opacity .1s calc(.3s * var(--t) );
+    z-index: 1;
 }

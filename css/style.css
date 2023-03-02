@@ -51,9 +51,9 @@ button {
     --border-color: rgb(0, 0, 0);
 }
 
-/**********/
+/************/
 /* ANIMATIE */
-/**********/
+/************/
 
 .bounce {
     animation: bounce 1.6s infinite;
@@ -107,6 +107,35 @@ button {
     50% {
         transform: scale(1.1);
     }
+}
+
+.muzieknoot-container {
+    position:absolute;
+    display:grid;
+    place-content: center;
+    place-items: center;
+    list-style: none;
+    z-index: 2;
+    top: 2em;
+}
+
+.muzieknoot {
+    position:absolute;
+    width: 3em;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/muzieknoot.png);
+}
+
+.muzieknoot-container.boom li {
+    transform:
+        translateX( calc( var(--x) * 1vw) ) translateY( calc( var(--y) * 1vh) );
+        opacity:0;
+    transition:
+        transition-timing-function ease-in,
+        transform calc(.3s * var(--t) ),
+        opacity 2s calc(.3s * var(--t) );
 }
 
 
