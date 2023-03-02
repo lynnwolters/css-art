@@ -16,12 +16,12 @@
     --height-lichaam: 8em;
     --width-lichaam: 30em;
     --width-border: .1em;
-    
+
     position: relative;
 
     width: var(--width-lichaam);
     height: calc(var(--height-lichaam) + var(--height-been) - var(--width-border));
-    
+
     z-index: 100;
 }
 
@@ -176,16 +176,14 @@
 }
 
 .wrapper-mp3-player .pupil {
-width: 2em;
-height: 4em;
-border-radius: 50%;
-background-color: var(--text-color-1);
-background-image: 
-conic-gradient(
-    from -90deg at 60% 40%, 
-    black 92%, 
-    transparent 92%
-    );
+    width: 2em;
+    height: 4em;
+    border-radius: 50%;
+    background-color: var(--text-color-1);
+    background-image:
+        conic-gradient(from -90deg at 60% 40%,
+            black 92%,
+            transparent 92%);
 }
 
 .wrapper-mp3-player .schaduw {
@@ -202,7 +200,8 @@ conic-gradient(
     aspect-ratio: 1/1;
     background-color: var(--accent-color-3);
     right: -1em;
-    border-radius: 0 1em 1em 0;;
+    border-radius: 0 1em 1em 0;
+    ;
     border: solid var(--width-border) var(--border-color);
     position: absolute;
 }
@@ -213,7 +212,8 @@ conic-gradient(
     background-color: var(--accent-color-3);
     top: -1.2em;
     right: 4em;
-    border-radius: 1em 1em 0 0;;
+    border-radius: 1em 1em 0 0;
+    ;
     border: solid var(--width-border) var(--border-color);
     position: absolute;
 }

@@ -57,9 +57,9 @@ button {
 
 body {
     background-color: var(--accent-color-1);
-    display:grid;
+    display: grid;
     place-items: center;
-    height:100dvh;
+    height: 100dvh;
 }
 
 body nav {
@@ -203,8 +203,8 @@ footer button:hover {
 }
 
 .muzieknoot-container {
-    position:absolute;
-    display:grid;
+    position: absolute;
+    display: grid;
     place-content: center;
     place-items: center;
     list-style: none;
@@ -213,7 +213,7 @@ footer button:hover {
 }
 
 .muzieknoot {
-    position:absolute;
+    position: absolute;
     width: 3em;
     aspect-ratio: 1/1;
     background-repeat: no-repeat;
@@ -223,12 +223,10 @@ footer button:hover {
 
 .muzieknoot-container.boom li {
     transform:
-        translateX( calc( var(--x) * 1vw) ) translateY( calc( var(--y) * 1vh) );
-        opacity:0;
+        translateX(calc(var(--x) * 1vw)) translateY(calc(var(--y) * 1vh));
+    opacity: 0;
     transition:
         transition-timing-function ease-in,
-        transform calc(.3s * var(--t) ),
-        opacity 2s calc(.3s * var(--t) );
+        transform calc(.3s * var(--t)),
+        opacity 2s calc(.3s * var(--t));
 }
-
-

@@ -139,21 +139,17 @@
 }
 
 .wrapper-cassette .oog {
-width: 3.4em;
-height: 6em;
-border-radius: 50%;
-border: solid var(--width-border) var(--border-color);
-background-color: var(--text-color-1);
-background-image: 
-radial-gradient(
-    transparent 40%, 
-    white 40%
-    ), 
-conic-gradient(
-    from -90deg at 60% 40%, 
-    black 92%, 
-    transparent 92%
-    );
+    width: 3.4em;
+    height: 6em;
+    border-radius: 50%;
+    border: solid var(--width-border) var(--border-color);
+    background-color: var(--text-color-1);
+    background-image:
+        radial-gradient(transparent 40%,
+            white 40%),
+        conic-gradient(from -90deg at 60% 40%,
+            black 92%,
+            transparent 92%);
 }
 
 .wrapper-cassette .been {

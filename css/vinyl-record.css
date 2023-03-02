@@ -33,13 +33,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: 
-    repeating-radial-gradient(
-		black,
-		black 1%,
-		var(--accent-color-1) 1%,
-		var(--accent-color-1) 12%
-	);
+    background-image:
+        repeating-radial-gradient(black,
+            black 1%,
+            var(--accent-color-1) 1%,
+            var(--accent-color-1) 12%);
 }
 
 .wrapper-vinyl-record .ogen {
@@ -52,21 +50,17 @@
 }
 
 .wrapper-vinyl-record .oog {
-width: 3.4em;
-height: 6em;
-border-radius: 50%;
-border: solid var(--width-border) var(--border-color);
-background-color: var(--text-color-1);
-background-image: 
-radial-gradient(
-    transparent 40%, 
-    white 40%
-    ), 
-conic-gradient(
-    from -90deg at 60% 40%, 
-    black 92%, 
-    transparent 92%
-    );
+    width: 3.4em;
+    height: 6em;
+    border-radius: 50%;
+    border: solid var(--width-border) var(--border-color);
+    background-color: var(--text-color-1);
+    background-image:
+        radial-gradient(transparent 40%,
+            white 40%),
+        conic-gradient(from -90deg at 60% 40%,
+            black 92%,
+            transparent 92%);
 }
 
 .wrapper-vinyl-record .binnen-cirkel {
