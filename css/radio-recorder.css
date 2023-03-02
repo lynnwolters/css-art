@@ -1,0 +1,250 @@
+/******************/
+/* RADIO RECORDER */
+/******************/
+
+.wrapper-radio-recorder {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 4em);
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-items: center;
+}
+
+.wrapper-radio-recorder  .container-radio-recorder {
+    --height-lichaam: 12em;
+    --width-lichaam: 30em;
+    --width-border: .1em;
+
+    position: relative;
+
+    width: var(--width-lichaam);
+    height: calc(var(--height-lichaam) + var(--height-been));
+    
+    z-index: 100;
+}
+
+.wrapper-radio-recorder  .lichaam {
+    background-color: var(--accent-color-4);
+    border: solid var(--width-border) var(--border-color);
+    border-radius: 1em;
+    width: var(--width-lichaam);
+    height: var(--height-lichaam);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper-radio-recorder  .handvat {
+    width: 20em;
+    height: 2.2em;
+    border: solid var(--width-border) var(--border-color);
+    background: none;
+    border-radius: .5em .5em 0 0;
+    position: absolute;
+    top: calc(-2.1em - var(--width-border));
+}
+
+.wrapper-radio-recorder  .antenne {
+    height: 8em;
+    border: solid .05em var(--border-color);
+    position: absolute;
+    right: 5em;
+    top: -7.7em;
+    transform: rotate(24deg);
+}
+
+.wrapper-radio-recorder  .ogen {
+    top: 0;
+    display: flex;
+    position: absolute;
+    top: -3em;
+    z-index: 1;
+}
+
+.wrapper-radio-recorder   .oog {
+width: 3.4em;
+height: 6em;
+border-radius: 50%;
+border: solid var(--width-border) var(--border-color);
+background-color: var(--text-color-1);
+background-image: 
+radial-gradient(
+    transparent 40%, 
+    white 40%
+    ), 
+conic-gradient(
+    from -90deg at 60% 40%, 
+    black 92%, 
+    transparent 92%
+    );
+}
+
+.wrapper-radio-recorder   .radio-equipment {
+    width: var(--width-lichaam);
+    height: var(--height-lichaam);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-radio-recorder  .bovenkant-radio {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-radio-recorder  .onderkant-radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75%;
+}
+
+.wrapper-radio-recorder  .disc {
+    width: 16em;
+    height: 1.6em;
+    border: solid var(--width-border) var(--border-color);
+    background-color: var(--accent-color-1);
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-radio-recorder  .disc hr {
+    border: solid .05em var(--border-color);
+    width: 94%;
+}
+
+.wrapper-radio-recorder  .knoppen {
+    display: flex;
+    right: 1em;
+    top: .5em;
+    position: absolute;
+}
+
+.wrapper-radio-recorder  .knoppen li {
+    width: 1em;
+    aspect-ratio: 1/1;
+    background-color: var(--accent-color-3);
+    border-radius: 0.5em;
+    list-style: none;
+    border: solid var(--width-border) var(--border-color);
+    margin: .2em;
+}
+
+.wrapper-radio-recorder  .casette {
+    width: 6em;
+    height: 7em;
+    border: solid var(--width-border) var(--border-color);
+    background-color: var(--accent-color-3);
+    border-radius: .5em;
+}
+
+.wrapper-radio-recorder  .stereo {
+    width: 8em;
+    height: 5em;
+    border: solid var(--width-border) var(--border-color);
+    background-color: var(--accent-color-1);
+    border-radius: .5em;
+}
+
+.wrapper-radio-recorder  .been {
+    background-color: var(--accent-color-3);
+    height: 6em;
+    width: 1.6em;
+    position: absolute;
+    bottom: calc(-50% - var(--width-border));
+    border: solid var(--width-border) var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.wrapper-radio-recorder  .been.links {
+    left: calc(55% - var(--width-border));
+}
+
+.wrapper-radio-recorder  .been.rechts {
+    right: calc(55% - var(--width-border));
+}
+
+.wrapper-radio-recorder  .sok {
+    width: 2em;
+    height: 1em;
+    background-color: var(--accent-color-4);
+    border: solid var(--width-border) var(--border-color);
+    border-radius: .2em;
+    position: absolute;
+}
+
+.wrapper-radio-recorder  .schoen {
+    background-color: var(--accent-color-1);
+    width: 5em;
+    height: 1.4em;
+    position: absolute;
+    border-radius: .2em;
+    border: solid var(--width-border) var(--border-color);
+    bottom: -1.4em;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-radio-recorder  .schoen.links {
+    left: 0;
+}
+
+.wrapper-radio-recorder  .schoen.rechts {
+    right: 0;
+}
+
+.wrapper-radio-recorder  .box {
+    width: 2em;
+    height: 1em;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    border-top: solid var(--width-border) var(--border-color);
+    border-right: solid var(--width-border) var(--border-color);
+    border-left: solid var(--width-border) var(--border-color);
+    border-radius: 1em 1em 0 0;
+    top: -1em;
+}
+
+.wrapper-radio-recorder  .box.links {
+    right: -0.05em;
+}
+
+.wrapper-radio-recorder  .box.rechts {
+    left: -0.05em;
+}
+
+.wrapper-radio-recorder  .zool {
+    width: 4.6em;
+    height: .6em;
+    background-color: var(--accent-color-4);
+    border: solid var(--width-border) var(--border-color);
+    border-radius: .2em;
+    position: absolute;
+    bottom: -.6em;
+}
+
+.wrapper-radio-recorder  .schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-2);
+    position: absolute;
+    z-index: -2;
+}
+
+.wrapper-radio-recorder  #tweede-titel {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 6em;
+    position: absolute;
+    top: -1.8em;
+}

@@ -1,0 +1,234 @@
+/*********/
+/* RESET */
+/*********/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a,
+button {
+    cursor: pointer;
+}
+
+/*********/
+/* FONTS */
+/*********/
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Cartoonist';
+    src: url(../fonts/cartoonist.woff);
+}
+
+/***********/
+/* KLEUREN */
+/***********/
+
+:root {
+    --accent-color-1: rgb(255 175 213);
+    --line-color-1: rgb(198 128 161);
+    --shadow-color-1: rgb(241 156 196);
+
+    --accent-color-2: rgb(255 81 44);
+    --line-color-2: rgb(192 50 14);
+    --shadow-color-2: rgb(211 70 33);
+
+    --accent-color-3: rgb(125 40 31);
+    --line-color-3: rgb(94 29 22);
+    --shadow-color-3: rgb(118 33 24);
+
+    --accent-color-4: rgb(255 220 187);
+    --line-color-4: rgb(182 140 93);
+    --shadow-color-4: rgb(236 208 177);
+
+    --text-color-1: rgb(255, 255, 255);
+
+    --border-color: rgb(0, 0, 0);
+}
+
+/**********/
+/* LAYOUT */
+/**********/
+
+body {
+    background-color: var(--accent-color-1);
+    display:grid;
+    place-items: center;
+    height:100dvh;
+}
+
+body nav {
+    position: fixed;
+    top: 0;
+}
+
+body nav ul {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body nav ul li {
+    width: 4em;
+    aspect-ratio: 1/1;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .4em;
+    transition: 0.4s;
+}
+
+body nav ul li:hover {
+    transform: scale(1.1);
+}
+
+body nav ul li:nth-of-type(1) {
+    background-color: var(--accent-color-4);
+}
+
+body nav ul li:nth-of-type(2) {
+    background-color: var(--accent-color-3);
+}
+
+body nav ul li:nth-of-type(3) {
+    background-color: var(--accent-color-2);
+}
+
+body nav ul li:nth-of-type(4) {
+    background-color: var(--accent-color-1);
+    border: solid .2em var(--line-color-1);
+}
+
+body nav ul li a {
+    font-family: 'Cartoonist';
+    color: var(--text-color-1);
+    text-decoration: none;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+    height: 6em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer button {
+    font-family: 'Red Hat Display', sans-serif;
+    background: none;
+    border: none;
+    font-size: 1em;
+    transition: 1s;
+}
+
+footer button:hover {
+    transform: scale(1.2);
+}
+
+/************/
+/* ANIMATIE */
+/************/
+
+.bounce {
+    animation: bounce 1.6s infinite;
+    animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+        transform: rotateZ(0);
+    }
+
+    40% {
+        transform: translateY(-3em);
+    }
+
+    60% {
+        transform: translateY(-1em);
+    }
+}
+
+.slide-in {
+    animation: slide-in 1.8s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(0%, 50%);
+    }
+
+    50% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.scale {
+    animation: scale 2.6s infinite;
+    animation-delay: 1s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.muzieknoot-container {
+    position:absolute;
+    display:grid;
+    place-content: center;
+    place-items: center;
+    list-style: none;
+    z-index: 2;
+    top: 2em;
+}
+
+.muzieknoot {
+    position:absolute;
+    width: 3em;
+    aspect-ratio: 1/1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/muzieknoot.png);
+}
+
+.muzieknoot-container.boom li {
+    transform:
+        translateX( calc( var(--x) * 1vw) ) translateY( calc( var(--y) * 1vh) );
+        opacity:0;
+    transition:
+        transition-timing-function ease-in,
+        transform calc(.3s * var(--t) ),
+        opacity 2s calc(.3s * var(--t) );
+}
+
+
