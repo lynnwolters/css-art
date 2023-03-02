@@ -56,10 +56,11 @@ button {
 /**********/
 
 body {
-    background-color: var(--accent-color-1);
+    background-color: var(--j-color, var(--accent-color-1));
     display: grid;
     place-items: center;
     height: 100dvh;
+    overflow:hidden;
 }
 
 body nav {
@@ -75,47 +76,58 @@ body nav ul {
 }
 
 body nav ul li {
-    width: 4em;
-    aspect-ratio: 1/1;
-    border-radius: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .4em;
-    transition: 0.4s;
+    list-style: none;
 }
 
-body nav ul li:hover {
+body nav ul li button:hover {
     transform: scale(1.1);
 }
 
-body nav ul li:nth-of-type(1) {
-    background-color: var(--accent-color-4);
-}
-
-body nav ul li:nth-of-type(2) {
-    background-color: var(--accent-color-3);
-}
-
-body nav ul li:nth-of-type(3) {
-    background-color: var(--accent-color-2);
-}
-
-body nav ul li:nth-of-type(4) {
-    background-color: var(--accent-color-1);
-    border: solid .2em var(--line-color-1);
-}
-
-body nav ul li a {
+body nav ul li button {
     font-family: 'Cartoonist';
     color: var(--text-color-1);
     text-decoration: none;
     font-size: 1em;
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1000em;
+    width: 4em;
+    aspect-ratio: 1/1;
+    border: none;
+    margin: .5em;
+}
+
+body nav ul li #j70 {
+    background-color: var(--accent-color-4);
+}
+
+body nav ul li #j80 {
+    background-color: var(--accent-color-3);
+}
+
+body nav ul li #j90 {
+    background-color: var(--accent-color-2);
+}
+
+body nav ul li #j00 {
+    background-color: var(--accent-color-1);
+}
+
+body nav ul li #j70:focus {
+    border: solid .2em var(--line-color-4);
+}
+
+body nav ul li #j80:focus {
+    border: solid .2em var(--line-color-3);
+}
+
+body nav ul li #j90:focus {
+    border: solid .2em var(--line-color-2);
+}
+
+body nav ul li #j00:focus {
+    border: solid .2em var(--line-color-1);
 }
 
 /**********/
@@ -149,7 +161,6 @@ footer button:hover {
 /************/
 
 .bounce {
-    animation: bounce 1.6s infinite;
     animation-delay: 0.6s;
 }
 
@@ -187,7 +198,7 @@ footer button:hover {
     }
 }
 
-.scale {
+/* .scale {
     animation: scale 2.6s infinite;
     animation-delay: 1s;
 }
@@ -200,7 +211,7 @@ footer button:hover {
     50% {
         transform: scale(1.1);
     }
-}
+} */
 
 .muzieknoot-container {
     position: absolute;
@@ -208,8 +219,7 @@ footer button:hover {
     place-content: center;
     place-items: center;
     list-style: none;
-    z-index: 2;
-    top: 2em;
+    z-index: -2;
 }
 
 .muzieknoot {
@@ -229,4 +239,56 @@ footer button:hover {
         transition-timing-function ease-in,
         transform calc(.3s * var(--t)),
         opacity 2s calc(.3s * var(--t));
+}
+
+.ding {
+    transform: translateY(500%) rotate( calc( var(--ding-angle) + var(--j, 0deg) ) ) translateY(-500%);
+    transition:1s;
+}
+
+body > div:nth-of-type(1) {
+    --ding-angle:0deg;
+}
+
+body > div:nth-of-type(2) {
+    --ding-angle:90deg;
+}
+
+body > div:nth-of-type(3) {
+    --ding-angle:180deg;
+}
+
+body > div:nth-of-type(4) {
+    --ding-angle:270deg;
+}
+
+body[data-j="j00"] {
+    --j:0deg;
+    --j-color: var(--accent-color-1);
+}
+
+body[data-j="j90"] {
+    --j:-90deg;
+    --j-color: var(--accent-color-2);
+}
+
+body[data-j="j80"] {
+    --j:-180deg;
+    --j-color: var(--accent-color-3);
+}
+
+body[data-j="j70"] {
+    --j:-270deg;
+    --j-color: var(--accent-color-4);
+}
+
+.schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    opacity: .08;
+    z-index: -1;
+    transform: scale(1);
 }

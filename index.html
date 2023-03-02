@@ -23,32 +23,16 @@
 
     <nav>
         <ul>
-            <li><a href="#">70s</a></li>
-            <li><a href="#">80s</a></li>
-            <li><a href="#">90s</a></li>
-            <li><a href="#">00s</a></li>
+            <li><button id="j70">70s</button></li>
+            <li><button id="j80">80s</button></li>
+            <li><button id="j90">90s</button></li>
+            <li><button id="j00">00s</button></li>
         </ul>
     </nav>
 
-    <!-- Muzieknoten -->
-
-    <ul class="muzieknoot-container">
-        <li class="muzieknoot" style="--x:20; --y:-40; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:30; --y:20; --t:1"></li>
-        <li class="muzieknoot" style="--x:20; --y:-10; --t:.5"></li>
-        <li class="muzieknoot" style="--x:-10; --y:--20; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:-20; --y:-30; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:40; --y:-0; --t:.6;"></li>
-        <li class="muzieknoot" style="--x:-25; --y:-10; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:-40; --y:-40; --t:.4;"></li>
-        <li class="muzieknoot" style="--x:-30; --y:20; --t:.8;"></li>
-        <li class="muzieknoot" style="--x:10; --y:10; --t:.4;"></li>
-        <li class="muzieknoot" style="--x:-10; --y:40; --t:.8;"></li>
-    </ul>
-
     <!-- MP3 Player -->
 
-    <div class="wrapper-mp3-player slide-in">
+    <div class="wrapper-mp3-player slide-in ding">
         <div class="container-mp3-player bounce">
             <div class="lichaam">
                 <div class="boven-knop"></div>
@@ -58,12 +42,8 @@
                 </div>
                 <div class="ogen">
                     <div class="oog">
-                        <div class="pupil">
-                        </div>
                     </div>
                     <div class="oog">
-                        <div class="pupil">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -89,7 +69,7 @@
 
     <!-- Radio Recorder -->
 
-    <div class="wrapper-radio-recorder slide-in">
+    <div class="wrapper-radio-recorder slide-in ding">
         <div class="container-radio-recorder bounce">
             <div class="lichaam">
                 <div class="handvat"></div>
@@ -140,7 +120,7 @@
 
     <!-- Cassette -->
 
-    <div class="wrapper-cassette slide-in">
+    <div class="wrapper-cassette slide-in ding">
         <div class="container-cassette bounce">
             <div class="lichaam">
                 <div class="schroeven">
@@ -186,7 +166,7 @@
 
     <!-- Vinyl Record -->
 
-    <div class="wrapper-vinyl-record slide-in">
+    <div class="wrapper-vinyl-record slide-in ding">
         <div class="container-vinyl-record bounce">
             <div class="lichaam">
                 <div class="ogen">
@@ -219,7 +199,23 @@
 
     <!-- Schaduw -->
 
-    <div class="schaduw scale"></div>
+    <div class="schaduw"></div>
+
+        <!-- Muzieknoten -->
+
+        <ul class="muzieknoot-container">
+            <li class="muzieknoot" style="--x:20; --y:-40; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:30; --y:20; --t:1"></li>
+            <li class="muzieknoot" style="--x:20; --y:-10; --t:.5"></li>
+            <li class="muzieknoot" style="--x:-10; --y:--20; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:-20; --y:-30; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:40; --y:-0; --t:.6;"></li>
+            <li class="muzieknoot" style="--x:-25; --y:-10; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:-40; --y:-40; --t:.4;"></li>
+            <li class="muzieknoot" style="--x:-30; --y:20; --t:.8;"></li>
+            <li class="muzieknoot" style="--x:10; --y:10; --t:.4;"></li>
+            <li class="muzieknoot" style="--x:-10; --y:40; --t:.8;"></li>
+        </ul>
 
     <!-- Footer -->
 
@@ -227,13 +223,15 @@
         <button id="muzieknoot-button">🎵 Click me!</button>
     </footer>
 
-    <script src="./js/libraries/circletype.min.js"></script>
-    <script src="./js/gebogen-tekst.js"></script>
-    <script src="./js/gebogen-tekst-2.js"></script>
-    <script src="./js/gebogen-tekst-3.js"></script>
-    <script src="./js/gebogen-tekst-4.js"></script>
-    <script src="./js/muzieknoten.js"></script>
-    <script src="./js/ogen.js"></script>
+    <script src="js/libraries/circletype.min.js"></script>
+    <script src="js/gebogen-tekst.js"></script>
+    <script src="js/gebogen-tekst-2.js"></script>
+    <script src="js/gebogen-tekst-3.js"></script>
+    <script src="js/gebogen-tekst-4.js"></script>
+    <script src="js/muzieknoten.js"></script>
+    <script src="js/ogen.js"></script>
+    <script src="js/move-it.js"></script>
+    <script src="js/schaduw.js"></script>
 
 </body>
 
