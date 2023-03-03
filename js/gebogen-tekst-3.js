@@ -1,2 +1,2 @@
 const thirdTitle = new CircleType(document.getElementById('titel-drie'))
-thirdTitle.radius(420);
+thirdTitle.radius(300);
