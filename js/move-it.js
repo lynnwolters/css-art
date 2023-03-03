@@ -9,7 +9,7 @@ function moveIt() {
     document.body.dataset.j = this.id;
     schaduw.classList.add("moveIt");
 
-    schaduw.addEventListener("animationend", moveItKlaar);
+    schaduw.addEventListener("animationend", moveItKlaar)
 }
 
 
