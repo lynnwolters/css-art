@@ -98,6 +98,7 @@ body nav ul li button {
     aspect-ratio: 1/1;
     border: none;
     margin: .5em;
+    transition: .2s ease-in-out;
 }
 
 body nav ul li #j70 {
@@ -132,6 +133,10 @@ body nav ul li #j00:focus {
     border: solid .2em var(--line-color-1);
 }
 
+.active {
+    border: solid .2em var(--line-color-1);
+}
+
 /**********/
 /* FOOTER */
 /**********/
@@ -163,11 +168,11 @@ footer button:hover {
 /************/
 
 .bounce {
-    animation-delay: 0.6s;
+    animation: bounce 2s infinite;
+    animation-delay: var(--draaitijd);
 }
 
 @keyframes bounce {
-
     0%,
     20%,
     50%,
@@ -182,6 +187,26 @@ footer button:hover {
 
     60% {
         transform: translateY(-1em);
+    }
+}
+
+.scale {
+    animation: scale 2s infinite;
+    animation-delay: var(--draaitijd);
+}
+
+@keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.1;
+    }
+
+
+    100% {
+        scale: 1;
     }
 }
 
@@ -289,7 +314,7 @@ body[data-j="j70"] {
     font-family: 'Cartoonist';
     font-size: 5em;
     position: absolute;
-    top: -1.2em;
+    top: -1.4em;
 }
 
 #titel-twee {
@@ -305,7 +330,7 @@ body[data-j="j70"] {
     font-family: 'Cartoonist';
     font-size: 5em;
     position: absolute;
-    top: -1.2em;
+    top: -1.4em;
 }
 
 #titel-vier {

@@ -18,7 +18,6 @@
     <script defer src="js/muzieknoten.js"></script>
     <script defer src="js/ogen.js"></script>
     <script defer src="js/move-it.js"></script>
-    <script defer src="js/schaduw.js"></script>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/mp3-player.css">
@@ -34,10 +33,10 @@
 
     <nav>
         <ul>
-            <li><button id="j70">70s</button></li>
-            <li><button id="j80">80s</button></li>
-            <li><button id="j90">90s</button></li>
-            <li><button id="j00">00s</button></li>
+            <li><button id="j70" onclick="activateButton(this)">70s</button></li>
+            <li><button id="j80" onclick="activateButton(this)">80s</button></li>
+            <li><button id="j90" onclick="activateButton(this)">90s</button></li>
+            <li><button id="j00" class="active" onclick="activateButton(this)">00s</button></li>
         </ul>
     </nav>
 
@@ -210,7 +209,7 @@
 
     <!-- Schaduw-->
 
-    <div class="schaduw"></div>
+    <div class="schaduw scale"></div>
 
     <!-- Muzieknoten -->
 

@@ -1,8 +1,18 @@
-const borderSelected = document.querySelector('body nav ul li #j00');
+function activateButton(btn) {
+    
+    let buttons = document.querySelectorAll('nav button');
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
 
-window.addEventListener('load', function() {
-    borderSelected.style.border = '.2em solid rgb(198 128 161';
-});
+    btn.classList.add('active');
+}
+
+
+
+
+
+
 
 
 
