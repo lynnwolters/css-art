@@ -228,10 +228,19 @@
     bottom: -.6em;
 }
 
-.wrapper-radio-recorder #tweede-titel {
+/* .wrapper-radio-recorder #tweede-titel {
     color: var(--text-color-1);
     font-family: 'Cartoonist';
     font-size: 6em;
     position: absolute;
     top: -1.8em;
+} */
+
+.wrapper-radio-recorder .schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-2);
+    position: absolute;
+    z-index: -1;
 }

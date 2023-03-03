@@ -201,11 +201,20 @@
     position: absolute;
 }
 
-.wrapper-mp3-player #eerste-titel {
+/* .wrapper-mp3-player #eerste-titel {
     color: var(--text-color-1);
     font-family: 'Cartoonist';
     font-size: 6em;
     position: absolute;
     top: -1.8em;
     z-index: 1;
+} */
+
+.wrapper-mp3-player .schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-1);
+    position: absolute;
+    z-index: -1;
 }

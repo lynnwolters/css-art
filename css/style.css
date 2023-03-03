@@ -49,6 +49,8 @@ button {
     --text-color-1: rgb(255, 255, 255);
 
     --border-color: rgb(0, 0, 0);
+
+    --draaitijd: 1s;
 }
 
 /**********/
@@ -172,7 +174,6 @@ footer button:hover {
     80%,
     100% {
         transform: translateY(0);
-        transform: rotateZ(0);
     }
 
     40% {
@@ -183,35 +184,6 @@ footer button:hover {
         transform: translateY(-1em);
     }
 }
-
-.slide-in {
-    animation: slide-in 1.8s ease-out;
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translate(0%, 50%);
-    }
-
-    50% {
-        transform: translate(-50%, -50%);
-    }
-}
-
-/* .scale {
-    animation: scale 2.6s infinite;
-    animation-delay: 1s;
-}
-
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
-} */
 
 .muzieknoot-container {
     position: absolute;
@@ -242,8 +214,8 @@ footer button:hover {
 }
 
 .ding {
-    transform: translateY(500%) rotate( calc( var(--ding-angle) + var(--j, 0deg) ) ) translateY(-500%);
-    transition:1s;
+    transform: translateY(600%) rotate( calc( var(--ding-angle) + var(--j, 0deg) ) ) translateY(-600%);
+    transition: var(--draaitijd) ease-in-out;
 }
 
 body > div:nth-of-type(1) {
@@ -290,5 +262,56 @@ body[data-j="j70"] {
     position: absolute;
     opacity: .08;
     z-index: -1;
-    transform: scale(1);
+    translate:0 25%;
+}
+
+.schaduw.moveIt {
+    animation: schaduw var(--draaitijd) ease-in-out;
+}
+
+@keyframes schaduw {
+    0% {
+        scale:1;
+        opacity:.08;
+    }
+    50% {
+        scale:0;
+        opacity:0;
+    }
+    100% {
+        scale:1;
+        opacity:.08;
+    }
+}
+
+#titel-een {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 5em;
+    position: absolute;
+    top: -1.2em;
+}
+
+#titel-twee {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 5em;
+    position: absolute;
+    top: -1.2em;
+}
+
+#titel-drie {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 5em;
+    position: absolute;
+    top: -1.2em;
+}
+
+#titel-vier {
+    color: var(--text-color-1);
+    font-family: 'Cartoonist';
+    font-size: 5em;
+    position: absolute;
+    top: -1.2em;
 }

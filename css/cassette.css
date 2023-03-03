@@ -231,10 +231,19 @@
     bottom: -.6em;
 }
 
-.wrapper-cassette #derde-titel {
+/* .wrapper-cassette #derde-titel {
     color: var(--text-color-1);
     font-family: 'Cartoonist';
     font-size: 6em;
     position: absolute;
     top: -1.4em;
+} */
+
+.wrapper-cassette .schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-3);
+    position: absolute;
+    z-index: -1;
 }

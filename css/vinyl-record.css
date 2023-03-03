@@ -152,10 +152,19 @@
     bottom: -.6em;
 }
 
-.wrapper-vinyl-record #vierde-titel {
+/* .wrapper-vinyl-record #vierde-titel {
     color: var(--text-color-1);
     font-family: 'Cartoonist';
     font-size: 6em;
     position: absolute;
     top: -1.2em;
+} */
+
+.wrapper-vinyl-record .schaduw {
+    width: 48em;
+    height: 16em;
+    border-radius: 50%;
+    background-color: var(--shadow-color-4);
+    position: absolute;
+    z-index: -1;
 }

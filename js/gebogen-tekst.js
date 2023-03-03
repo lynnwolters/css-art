@@ -1,2 +1,2 @@
-const firstTitle = new CircleType(document.getElementById('eerste-titel'))
-firstTitle.radius(320);
+const firstTitle = new CircleType(document.getElementById('titel-een'))
+firstTitle.radius(420);
