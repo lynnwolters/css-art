@@ -4,9 +4,6 @@
 
 .wrapper-cassette {
     position: absolute;
-    /* left: 50%; */
-    /* top: calc(50% + 3em); */
-    /* transform: translate(-50%, -50%); */
     display: grid;
     justify-items: center;
 }
